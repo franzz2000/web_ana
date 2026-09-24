@@ -1,0 +1,2 @@
+<b>Fundación ACS / Diseño Web</b>
+<p>Desarrollo, diseño y maquetación de la nueva página web corporativa, utilizando una estructura simple y clara para poder navegar en ella fácilmente. La web dispone de un gestor de contenidos, diseñado a medida, para actualizar los contenidos.</p>

@@ -1,0 +1,108 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Página web de Ana Sabina Jimeno Demuth</title>
+    <link rel="stylesheet" type="text/css" href="css/principal.css" />
+    <script type="text/javascript">
+        function getVar() {
+            var search = document.location.search;
+            var tema = "";
+            if (search.indexOf('tema=') !== -1) {
+                tema = search.split('tema=')[1].substring(0, 2);
+            }
+            if (tema !== "di" && tema !== "ic" && tema !== "dw") {
+                tema = "di";
+            }
+            return tema;
+        }
+
+        var tema = getVar();
+
+        var trabajos = [
+            ["di", "asicma", "Asicma", "Catálogo Corporativo"],
+            ["di", "cbre", "CB Richard Ellis", "Campañas y catálogos"],
+            ["di", "cofares", "Cofares", "Catálogo de productos"],
+            ["di", "deliterraneo", "Deliterráneo", "Papelería y rotulación"],
+            ["di", "el_rodat", "El Rodat", "Diseño del catálogo"],
+            ["di", "europea", "Europea de Seguros", "Campañas y catálogo corporativo"],
+            ["di", "executive", "Executive Excellence", "Revista mensual"],
+            ["di", "factory", "Factory", "Carpeta comercial"],
+            ["di", "hesperia", "Hesperia", "Carteles"],
+            ["di", "iberdisenio", "Iberdiseño", "Folleto corporativo"],
+            ["di", "ief", "Instituto de la Empresa Familiar", "Catálogo y tríptico"],
+            ["di", "limmat", "Limmat Stiftung", "Anuarios"],
+            ["di", "quensis", "Quensis", "Folleto corporativo"],
+            ["di", "rhelios", "Rhelios", "Carpeta corporativa"],
+            ["di", "scopik", "Scopik", "Papelería y folletos"],
+            ["di", "trapa", "Trapa", "Packaging"],
+            ["ic", "bbs", "BBS serveis", "Diseño y manual corporativo"],
+            ["ic", "deli", "Deliteráneo", "Creación de la imagen corporativa y varias aplicaciones"],
+            ["ic", "font_lys", "Font Lys", "Diseño y aplicaciones del nuevo logo"],
+            ["ic", "fractalia", "Fractalia", "Investigación y creación de la nueva imagen corporativa"],
+            ["ic", "herkap", "Herkap", "Diseño de la imagen corporativa"],
+            ["ic", "iqs", "IQS", "Diseño y manual corporativo"],
+            ["ic", "quensis", "Quensis", "Diseño de la imagen corporativa"],
+            ["ic", "rhelios", "Rhelos", "Diseño y creación del nuevo logotipo"],
+            ["ic", "santander", "Santander", "Colaboración con el diseño del logotipo del 150 aniversario"],
+            ["ic", "scopik", "Scopik", "Naming y diseño de la imagen corporativa"],
+            ["ic", "trapa", "Chocolates Trapa", "Diseño del logo y packaging"],
+            ["ic", "ventubel", "Ventubel", "Diseño del logo y packaging"],
+            ["dw", "asicma", "Asicma", "Diseño de la página web"],
+            ["dw", "elconfidencial", "El Confidencial Autonómico", "Creación del diseño con plantilla Wordpress"],
+            ["dw", "essentia", "Essentia", "Diseño y fotomontaje de la página web"],
+            ["dw", "funciva", "Funciva", "Investigación y creación de la nueva página web"],
+            ["dw", "acs", "Fundación ACS", "Diseño de la página Web"],
+            ["dw", "barreiros", "Fundación Barreiros", "Diseño de la página web"],
+            ["dw", "herkap", "Herkap", "Creación del diseño con plantilla Joomla!"],
+            ["dw", "milupa", "Milupa", "Colaboración con el diseño de la página web y el microsite 'Las recetas de Mamá'"]
+        ];
+    </script>
+</head>
+<body>
+    <div id="columna" align="center">
+        <div id="header">
+            <div id="titulo_nombre">
+                <div class="nombre">ANA</div>
+                <div class="nombre">JIMENO</div>
+                <div class="nombre">DEMUTH</div>
+            </div>
+            <span id="menu">
+                <script type="text/javascript">
+                if (tema === "di")
+                    document.write('<span class="activo">DISEÑO IMPRESO</span>');
+                else
+                    document.write('<span><a href="index.html?tema=di">DISEÑO IMPRESO</a></span>');
+                
+                document.write('<span style="color: #c1bfc0;margin: 0px 10px;">|</span>');
+                
+                if (tema === "ic")
+                    document.write('<span class="activo">IDENTIDAD CORPORATIVA</span>');
+                else
+                    document.write('<span><a href="index.html?tema=ic">IDENTIDAD CORPORATIVA</a></span>');
+                
+                document.write('<span style="color: #c1bfc0;margin: 0px 10px;">|</span>');
+                
+                if (tema === "dw")
+                    document.write('<span class="activo">DISEÑO WEB</span>');
+                else
+                    document.write('<span><a href="index.html?tema=dw">DISEÑO WEB</a></span>');
+                </script>
+            </span>
+        </div>
+        <ul>
+            <script type="text/javascript">
+                for (var i = 0; i < trabajos.length; i++) {
+                    if (trabajos[i][0] === tema) {
+                        document.write('<li><a href="trabajos.html?tr=' + trabajos[i][0] + '_' + trabajos[i][1] + '">');
+                        document.write('<img class="thumb" src="images/' + trabajos[i][0] + '_' + trabajos[i][1] + '/' + trabajos[i][1] + '_pq/' + trabajos[i][1] + '_pq01.jpg" alt="' + trabajos[i][2] + ' - ' + trabajos[i][3] + '" width="188" height="137"/>');
+                        document.write('<span class="titulo">' + trabajos[i][2] + '</span>');
+                        document.write('<div class="subtitulo">' + trabajos[i][3] + '</div>');
+                        document.write('</a></li>');
+                    }
+                }
+            </script>
+        </ul>
+    </div>
+</body>
+</html>

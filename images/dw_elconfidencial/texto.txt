@@ -1,0 +1,2 @@
+<b>El Confidencial Autonómico / Diseño Web</b>
+<p>El portal informativo de El Confidencial Autonómico, del grupo de comunicación El Confidencial, ha sido desarrollado con un gestor de contenidos estándar que ofrece numerosas funcionalidades. A esta herramienta se le han personalizado las plantillas de diseño definiendo las secciones, categorías y adaptándolo a la identidad visual del cliente.</p>

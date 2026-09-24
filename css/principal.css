@@ -1,0 +1,93 @@
+body {
+  	/*background: url("/Web Ana/Portfolio/images/fondo.png") no-repeat;*/
+	text-align: center;
+	margin: 4em 0 0 0;
+	vertical-align: middle; 
+	font-size: .6em;
+	font-family: "Lucida Sans",helvetica,sans-serif;
+}
+
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+li {
+    width: 195px;
+    min-height: 190px;
+	display: -moz-inline-stack;
+    display: inline-block;
+	vertical-align: top;
+    margin: 0px;
+	zoom: 1;
+	*display: inline;
+	_height: 190px;
+}
+
+a {
+	text-decoration: none;
+	color: #c1bfc0;
+}
+
+#columna {
+	width: 800px;
+	text-align: left;
+	margin: 0 auto;
+}
+
+#header {
+	right: 135px;
+	top: 40px;
+	margin: 0px;
+	padding: 0px;
+	height: 90px;
+	vertical-align: text-bottom;
+}
+
+#titulo_nombre {
+	width: 70px;
+	float: left;
+}
+
+#menu {
+	position: relative;
+	top: 45px;
+	width: 200px;
+	text-align: center;
+	font-size: 1.1em;
+	padding-left: 100px;
+}
+
+#curriculum {
+	padding-left: 195px;
+	
+}
+
+
+.activo {
+	text-decoration: underline;
+	color: #3CB0F2;
+}
+
+.nombre {
+	margin: 4px;
+	color:#ffffff;
+	background: #A4A3A4;
+	padding: 0px 4px 0px 4px;
+	float: left;
+}
+
+.titulo{
+	color: #423F3F;
+	margin: 8px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+.subtitulo {
+	color: #949599;
+	margin: 0px 0px 0px 0px;
+}
+
+.thumb {
+	border: 1px solid #C5C6C8;
+}
